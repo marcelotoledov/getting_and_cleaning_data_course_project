@@ -4,7 +4,7 @@ The original data was spread across multiple files, so I wrote a script to put i
 How to use it
 The folder UCI HAR Dataset has to be in your R working directory.
 Run the script run_analysis.R.
-The script will automatically create a file called final_tidy_dataset.txt.
+The script will automatically create a file called tidy_dataset.txt.
 
 How the run_analysis.R works
 Merging: I combined Subject, Activity, and Feature files for both the test and train groups into one table.
