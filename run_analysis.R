@@ -42,9 +42,10 @@ names(tidy_subset) <- gsub("-std\\(\\)", "STD", names(tidy_subset))
 names(tidy_subset) <- gsub("-", "", names(tidy_subset))
 
 #aveerage of each variable
-final_tidy_data <- tidy_subset %>%
+tidy_data <- tidy_subset %>%
   group_by(subject, activity) %>%
   summarize_all(list(mean = mean))
 
 #save output as text
-write.table(final_tidy_data, "final_tidy_dataset.txt", row.name = FALSE)
+write.table(tidy_data, "tidy_dataset.txt", row.name = FALSE)
+
